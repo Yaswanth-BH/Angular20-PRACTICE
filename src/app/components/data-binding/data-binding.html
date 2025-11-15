@@ -1,0 +1,52 @@
+<h2>Data Binding</h2>
+<br>
+
+<table style="width: 100%;">
+    <tr>
+        <p>Interpolation</p>
+        <td>
+            {{courseName}}
+        </td>
+        <td>
+            {{productprice}}
+        </td>
+        <td>
+            <span>{{courseName}}</span>
+        </td>
+    </tr>
+    <tr>
+        <p>Property Binding</p>
+        <td>
+            <input type="text" value="{{courseName}}">
+        </td>
+        <td>
+            <input [type]="inputType" [maxLength]="maxLength" [minLength]="minChar">
+        </td>
+        <td>
+            <p [class]="myClassname">The sample para for myClassName.</p>
+        </td>
+    </tr>
+    <tr>
+        <p>Event Binding</p>
+
+        <td>
+            <button (click)="showWelcomeMessage()"> Show Message</button>
+        </td>
+        <td>
+            <button (click)="changeCourseName()">Change Course</button>
+        </td>
+        <td>
+            <select (change)="onCityChange()">
+                <option value="">Pune</option>
+                <option value="">Nagpur</option>
+                <option value="">Mumbai</option>            
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <p>Two-way Binding / ngModel</p>
+        <td>
+            <input type="text" [(ngModel)]="courseName">
+        </td>
+    </tr>
+</table>
