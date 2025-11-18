@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-4 table-responsive">
+        <table class="table table-bordared">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Website</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (item of userList; track $index) {
+                <tr>
+                    <td>{{item.name}}</td>
+                    <td>{{item.website}}</td>
+                    <td>{{item.username}}</td>
+                    <td>{{item.email}}</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-4">
+        <ul>
+            @for (item of toDoList; track $index) {
+            <li>{{item.title}}</li>
+            }
+        </ul>
+    </div>
+    <div class="col-4 table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>UserId</th>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Full name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (item of busBookingList; track $index) {
+                <tr>
+                    <td>{{item.userId}}</td>
+                    <td>{{item.userName}}</td>
+                    <td>{{item.role}}</td>
+                    <td>{{item.fullName}}</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
