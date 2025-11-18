@@ -6,6 +6,7 @@ import { DataBinding } from './components/data-binding/data-binding';
 import { SignalEx } from './components/signal-ex/signal-ex';
 import { AttDirective } from './components/att-directive/att-directive';
 import { ComponentLifePipes } from './components/component-life-pipes/component-life-pipes';
+import { GetApi } from './components/get-api/get-api';
 
 export const routes: Routes = [
     { path: 'admin', component: Admin },
@@ -15,5 +16,7 @@ export const routes: Routes = [
     { path: 'signal', component: SignalEx },
     { path: 'attribute-directive', component: AttDirective },
     { path: 'component-lifecycle-pipes', component: ComponentLifePipes },
+    { path: 'get-api', component: GetApi },
+
 
 ];
